@@ -4,7 +4,8 @@
     <scroller>
 
       <div class="wrapper">
-        
+
+        //城市列表
         <div class="slot left" slot="right" v-on:click="handleCityShowChange()">
           <a href="javascript:void(0)" class="">{{address}}
             <i class="icon-enter"></i>
@@ -21,6 +22,7 @@
         </div>
         <div class="controller">
 
+          //轮播图
           <div class="photo" ref="mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -42,13 +44,16 @@
             <div class="swiper-pagination"></div>
           </div>
 
-					<div class="tips">
-						<i class="icon icon-horn"></i>
-						<div class="notice">
-							<div class="marquee">信用卡精养卡自动代还特色，每个月预留5%-10%的金额</div>
-						</div>
+        //文字轮播
+		<div class="tips">
+			<i class="icon icon-horn"></i>
+			<div class="notice">
+				<div class="marquee">信用卡精养卡自动代还特色，每个月预留5%-10%的金额</div>
+			</div>
           </div>
 
+
+        //左右布局列表
           <div class="main">
             <ul class="list">
               <li class="item" v-for="(item, index) in groupItems" :key="index" @click="linkToIncreaseList(item.key)">
