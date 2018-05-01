@@ -1,0 +1,191 @@
+@import "~assets/styles/_bootstrap";
+
+.increase-cheats {
+  height: 100%;
+  background: #edf0f0;
+  .slot {
+    position: absolute;
+    z-index: 10;
+    top: rem(65px);
+    a{
+      color: #fff;
+      .icon-enter{
+        transform:rotate(270deg);
+      }
+    }
+    &.right {
+      right:0;
+      padding: rem(10px);
+      background: #3f8bf1;
+      border-radius: rem(20px) 0 0 rem(20px);
+      line-height: rem(22px);
+      > a{
+				display: block;
+				width: 100%;
+				font-size: rem(32px);
+				color: #fff;
+
+				> i {
+					width: rem(34px);
+					height: rem(34px);
+				}
+      }
+    }
+    &.left {
+      left:rem(20px);
+    }
+    .sp{color:#fff}
+  }
+
+  .wrapper {
+    //padding-top: rem(90px);
+    .swiper-pagination-bullet-active{
+      background: #fff;
+    }
+    .controller {
+
+      .photo {
+        width: 100%;
+        height: rem(400px);
+        overflow-x: hidden;
+			}
+
+			.tips {
+				position: relative;
+				height: rem(60px);
+				line-height: rem(60px);
+				padding-left: rem(64px);
+				overflow: hidden;
+				background-color: #2d3940;
+
+				i.icon {
+					position: absolute;
+					top: 0;
+					left: 0;
+					display: block;
+					width: rem(64px);
+					height: rem(60px);
+					line-height: rem(60px);
+					text-align: center;
+					color: #fff;
+					font-size: rem(32px);
+					background-color: #2d3940;
+				}
+
+				.notice {
+					position: absolute;
+					top: 0;
+					left: rem(64px);
+					width: 100%;
+					height: rem(60px);
+					overflow: hidden;
+
+					.marquee {
+						height: rem(60px);
+						word-break:keep-all;
+						white-space:nowrap;
+						font-size: rem(24px);
+						color: #fff;
+						text-align: left;
+						animation: marquee 24s linear infinite;
+					}
+
+					@keyframes marquee {
+						0% {
+								transform: translateX(100%);
+						}
+						100% {
+								transform: translateX(-280%);
+						}
+					}
+				}
+			}
+
+      .main {
+        /* margin-top: rem(20px); */
+
+        .list {
+
+          .item {
+            width: 100%;            
+            height: rem(240px);
+            padding: rem(45px) rem(20px);
+            margin-bottom: rem(20px);
+            background: #fff;
+            border-bottom: 1px solid $bc;
+
+            > a {
+              display: block;
+            }
+
+            .content-group {
+              display: block;
+              position: relative;
+              width: 100%;
+              > img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: rem(240px);
+                height: rem(150px);
+              }
+
+              .name {
+                position: absolute;
+                left: rem(140px);
+                font-size: rem(30px);
+                color: #333;
+              }
+
+              .sp-right {
+                position: absolute;
+                top: rem(46px);
+                right: rem(20px);
+              }
+              .content-txt {
+                margin-left: rem(240px);
+                padding: rem(20px);
+                padding-right: rem(10px);
+                width: rem(330px);
+
+                .tit {
+                  font-size: rem(32px);
+                  font-weight:bold;
+                }
+
+                .instruction {
+                  padding-top: rem(15px);
+                  font-size: rem(24px);
+                }
+              }
+
+              .content-r {
+                position: absolute;
+                top:0;
+                bottom:0;
+                right: rem(10px);
+                line-height: rem(150px);
+
+                .btn {
+                  padding: rem(10px);
+                  border-radius: rem(5px);
+                  font-size: rem(28px);
+                  color: #fff;
+
+                  &.open {      
+                    border-radius: rem(12px);            
+                    background: #f0913d;
+                  }
+                }
+              }              
+              
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.dialog .foot > button.dialog-item {
+  margin-right: 0;
+}
