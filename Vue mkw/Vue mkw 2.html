@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue慕课网 ---购物车案例课程安排 </title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />"
+    <script src="vue.js"></script>
+	
+</head>
+<body>
+	
+<div id="app">
+ <div class="container">
+ 		<h2>{{ title }}</h2>	
+		<table class="table" >
+			<thead>
+				<tr>
+					<th>产品编号</th>
+					<th>产品名称</th>
+					<th>购买数量</th>
+					<th>产品单价</th>
+					<th>产品总价</th>
+					<th>操作</th>
+				</tr>
+			</thead>
+			<tbody >
+				<tr>
+					<td>1000</td>
+					<td>iphone5s</td>
+					<td>
+						<button type="button"  class="btn btn-danger">-</button>
+						<div style="display: inline-block; min-width: 30px; text-align: center;"><input type="text" value="0"   ></div>
+						<button type="button"  class="btn btn-danger">+</button>
+					</td>
+					<td>4000</td>
+					<td>4000</td>
+					<td><button type="button" class="btn btn-danger">移除</button></td>
+				</tr>
+				<tr>
+					<td>2000</td>
+					<td>iphone6s</td>
+					<td>
+						<button type="button"  class="btn btn-danger">-</button>
+						<div style="display: inline-block; min-width: 30px; text-align: center;"><input type="text" value="0"   ></div>
+						<button type="button"  class="btn btn-danger">+</button>
+					</td>
+					<td>4000</td>
+					<td>4000</td>
+					<td><button type="button" class="btn btn-danger">移除</button></td>
+				</tr>
+				<tr>
+					<td>总购买价</td>
+					<td>800</td>
+					<td>总购买数量</td>
+					<td>2</td>
+					<td colspan="2"><button  type="button" class="btn btn-danger">清空购物车</button></td>
+				</tr>
+			</tbody>   				
+		</table>
+		<p >您的购物车为空</p>
+   	</div>		
+</div>
+
+<script>	
+	/*创建一个Vue的实例
+	 *通过v-for指令渲染产品数据 
+	 *使用Filter对金额和图片进行格式化 
+	 *使用V-on实现产品金额的动态计算
+	 *综合演示 
+	 */
+	
+	new Vue({ // 创建根实例
+		el: '#app',//Vue需要监听的模型范围  模型对象
+		data:{//代理数据  模型   数据的改变都会反向去操作dom
+			title:"Hello Vue"
+		},
+		filters:{//全局的过滤器和局部的过滤器 这里是局部过滤器
+			
+		},	
+		mounted:function(){//生命周期里的一部分  查询某一个方法
+			this.cartView(); //执行某一方法
+		},		 
+		methods:{//事件的绑定
+			cartView:function(){
+				this.title="xiali Vue";
+			}
+		}
+	}); 
+	//定义全局的过滤器
+	//Vue.filter();
+</script>
+</body>
+
+
+</html>
