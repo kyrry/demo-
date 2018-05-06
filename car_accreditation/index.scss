@@ -1,0 +1,252 @@
+
+@import "~assets/styles/_bootstrap";
+
+.add_car_accreditation {
+  height: 100%;
+
+  > ._v-container > ._v-content {
+    padding-top: rem(90px);
+  }
+
+  .header {
+    position: relative;
+    line-height: rem(92px);
+    text-indent: rem(20px);
+    font-size: rem(30px);
+    color: #000;
+    background: #f3f5f7;
+    position: relative;
+    p{
+      color:#898a8a;
+      display:flex;
+    }
+    .car_message_delete{
+      position: absolute;
+      right:rem(10px);
+    }
+    .message_delect{
+      position: absolute;
+      top: rem(34px);
+      right: rem(70px);
+      width: rem(24px);
+      height: rem(32px);
+      display:block;
+      background: url('~assets/images/delete.jpg') no-repeat;
+    }
+  }
+
+  .date {
+    color:#666;
+    position: absolute;
+    right:rem(70px);
+  }
+
+  .com-header {
+    position: relative;
+    line-height: rem(92px);
+    text-indent: rem(50px);
+    font-size: rem(30px);
+    color: #000;
+
+    &::after {
+      position: absolute;
+      top: rem(31px);
+      left: rem(28px);
+      content: '';
+      width: rem(6px);
+      height: rem(30px);
+      border-radius: rem(2px);
+      background: linear-gradient(to bottom, #26e6fb, #40beff);;
+    }
+  }
+
+  .basic-info-wrapper {
+
+    .info-header {
+      margin: rem(20px) 0 rem(5px);
+      background: #fff;
+      border-bottom: 1px solid $bc;
+      display:flex;
+      position: relative;
+      span{
+        flex:1;
+      }
+      .text{
+        position: absolute;
+        right:rem(50px);
+        color:#666;
+        font-size: rem(20px);
+      }
+    }
+
+    .info_box {
+      padding-bottom: rem(40px);
+
+      .info {
+        padding: 0 rem(20px);
+        font-size: rem(28px);
+        background: #fff;
+
+        .list {
+          position: relative;
+          height: rem(126px);
+          line-height: rem(126px);
+          font-size: rem(28px);
+          border-bottom: 1px solid $bc;
+          color: #000;
+          overflow: hidden;
+
+          .day{
+            position:absolute;
+            right:rem(50px);
+            top:rem(0px);
+          }
+
+          em {
+            display: inline-block;
+            float: left;
+            margin-right: rem(25px);
+            width: rem(50px);
+            height: 100%;
+            &.name { background: url('~assets/images/credit-card/name.png') no-repeat center / rem(46px) rem(53px); }
+            &.phone { background: url('~assets/images/credit-card/phone.png') no-repeat center / rem(44px) rem(49px); }
+            &.identity { background: url('~assets/images/credit-card/identity.png') no-repeat center / rem(50px) rem(35px); }
+            &.school { background: url('~assets/images/credit-card/school.png') no-repeat center / rem(49px) rem(49px); }
+            &.QQ { background: url('~assets/images/credit-card/QQ.png') no-repeat center / rem(45px) rem(47px); }
+            &.studentId { background: url('~assets/images/credit-card/studentId.png') no-repeat center / rem(50px) rem(50px); }
+            &.verificationCode { background: url('~assets/images/credit-card/verificationCode.png') no-repeat center / rem(41px) rem(49px); }
+          }
+
+          .people {
+            float: left;
+          }
+
+          input.input-item {
+            position: absolute;
+            top: rem(26px);
+            right: rem(70px);
+            width: rem(400px);
+            height: rem(70px);
+            font-size: rem(28px);
+            text-align: right;
+            border: none;
+            outline: none;
+            color:#666;
+            &::-webkit-input-placeholder { color: #c3c3c3; }
+            &::-moz-placeholder { color: #c3c3c3; }
+            &:-moz-placeholder { color: #c3c3c3; }
+            &:-ms-input-placeholder { color: #c3c3c3; }
+            &.school {
+              right: rem(65px);
+              &::-webkit-input-placeholder { color: #000; }
+              &::-moz-placeholder { color: #000; }
+              &:-moz-placeholder { color: #000; }
+              &:-ms-input-placeholder { color: #000; }
+            }
+            &.verificationCode {
+              right: rem(225px);
+              width: rem(200px);
+            }
+            &:disabled { background-color: #fff; }
+            &.files { opacity: 0; }
+          }
+
+          .image {
+            position: absolute;
+            top: rem(18px);
+            right: rem(60px);
+            width: rem(224px);
+            height: rem(90px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            > img {
+              max-width: 100%;
+              max-height: 100%;
+            }
+          }
+
+          .sp-right {
+            position: absolute;
+            top: rem(45px);
+            right: rem(20px);
+          }
+
+          .arrow {
+            position: absolute;
+            top: rem(45px);
+            right: rem(20px);
+            width: rem(18px);
+            height: rem(32px);
+            background: url('~assets/images/credit-card/arrow-left-little.png') no-repeat center / 100% 100%;
+          }
+
+          .get-code {
+            position: absolute;
+            top: rem(29px);
+            right: rem(20px);
+            width: rem(180px);
+            height: rem(64px);
+            line-height: rem(64px);
+            text-align: center;
+            color: #fff;
+            background-color: #01b3f0;
+            border-radius: rem(10px);
+            &.active { background-color: #c9c9c9; }
+          }
+
+          .switch-btn {
+            position: absolute;
+            top: rem(43px);
+            right: rem(30px);
+            width: rem(100px);
+            height: rem(40px);
+            background: #aaa;
+            border-radius:  rem(20px);
+            box-sizing: border-box;
+
+            .switch-btn-inner {
+              position: absolute;
+              top: rem(3px);
+              left: rem(4px);
+              width: rem(34px);
+              height: rem(34px);
+              border-radius: 50%;
+              background: #fff;
+            }
+
+            &.on {
+              background: #01b3f0;
+
+              .switch-btn-inner {
+                left: rem(63px);
+              }
+            }
+          }
+        }
+
+      }
+
+      .btn {
+        width: rem(710px);
+        height: rem(90px);
+        line-height: rem(90px);
+        text-align: center;
+        font-size: rem(32px);
+        color: #fff;
+        margin: rem(80px) rem(20px) 0 rem(20px);
+        background-color: #c9c9c9;
+        border: 1px solid #c9c9c9;
+        border-radius: rem(10px);
+
+        &.on {
+          background-color: #01b3f0;
+          border: 1px solid #01b3f0;
+        }
+      }
+    }
+
+  }
+
+}

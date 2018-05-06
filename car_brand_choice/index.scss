@@ -1,0 +1,78 @@
+@import "~assets/styles/_bootstrap";
+.car_brand_choice_page {
+  height: 100%;
+  background: #edf0f0;
+  position: relative;
+  .header{
+    height:rem(90px);
+  }
+  .car_select_right{
+      width:rem(50px);
+      position: fixed;
+      top:rem(130px);
+      height: 90%;
+      overflow-y: auto;
+      right:0;
+      right:rem(10px);
+      z-index:10;
+      text-align: center;
+      a{
+        display:block;
+        widows: 100%;
+        height:rem(60px);
+        font-size:rem(25px);
+      }
+    }
+    .car_select_content {
+      background:#eeeff1;
+      margin-top: rem(90px);
+      padding-bottom:rem(100px);
+      .tag{
+        text-indent:rem(20px);
+        display:block;
+      }
+      .title{
+        font-size:rem(28px);
+        color:#003333;
+      }
+      .selectA{
+         width: 100%;
+         height: 3.75rem;
+         background:#f9e8e8 !important;
+         z-index: 999;
+       }
+    .car{
+
+      color:#666666;
+      .car_title{
+        height:rem(50px);
+        line-height:rem(52px);
+        padding-left: rem(20px);
+      }
+      .car_list{
+        p{
+        height:rem(90px);
+        line-height:rem(90px);
+        border-top:rem(1px) solid #eeeff1;
+        background:#fff;
+        padding-left: rem(90px);
+
+        }
+        .logo{
+          height:rem(50px);
+          width:rem(50px);
+          position: absolute;
+          left:rem(20px);
+          top:rem(20px);
+        }
+      }
+    }
+  }
+
+}
+.header-back{
+  display:block !important;
+}
+.utilitybar-page{
+  display:none;
+}

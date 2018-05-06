@@ -1,0 +1,526 @@
+@import "~assets/styles/_bootstrap";
+
+.user-card-detail-page {
+  height: 100%;
+  background: #edf0f0;
+  .hp-level {
+    margin-left: rem(10px);
+    // position: absolute;
+    // left: rem(370px);
+    // top:rem(46px);
+    // right:0;
+
+  }
+
+  .hp-level-01 {
+    display: inline-block;
+    width: rem(54px);
+    height: rem(24px);
+    background: url('~assets/images/level-01.png') no-repeat;
+    background-size: 100%;
+    vertical-align: middle;
+  }
+
+  .hp-level-02 {
+    display: inline-block;
+    width: rem(54px);
+    height: rem(24px);
+    background: url('~assets/images/level-02.png') no-repeat;
+    background-size: 100%;
+    vertical-align: middle;
+  }
+
+  .hp-level-03 {
+    display: inline-block;
+    width: rem(54px);
+    height: rem(24px);
+    background: url('~assets/images/level-03.png') no-repeat;
+    background-size: 100%;
+    vertical-align: middle;
+  }
+
+  .hp-level-04 {
+    display: inline-block;
+    width: rem(54px);
+    height: rem(24px);
+    background: url('~assets/images/level-04.png') no-repeat;
+    background-size: 100%;
+    vertical-align: middle;
+  }
+
+  .hp-level-05 {
+    display: inline-block;
+    width: rem(54px);
+    height: rem(24px);
+    background: url('~assets/images/level-05.png') no-repeat;
+    background-size: 100%;
+    vertical-align: middle;
+  }
+
+  .wrapper {
+    padding: rem(90px) 0;
+  }
+
+  .banner {
+    width: 100%;
+    background: #eee;
+
+    > img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    > i {
+      position: absolute;
+      bottom: rem(45px);
+      right: rem(35px);
+    }
+  }
+
+  .time {
+		position: relative;
+    padding: 0 rem(20px);
+    height: rem(120px);
+    line-height: rem(120px);
+    background: #fff;
+    border-bottom: 1px solid #dedbdbcc;
+    padding:0 rem(20px);
+    position: relative;
+
+    .bank-log {
+			position: absolute;
+			top: rem(20px);
+			left: rem(20px);
+			width: rem(80px);
+      height: rem(80px);
+      img {
+        border-radius: 50%;
+      }
+      .id_number {
+        position: absolute;
+        right: 0;
+        top: rem(-12px);
+        right: rem(-630px);
+      }
+		}
+
+		.bank-name {
+			padding-left: rem(104px);
+			font-size: rem(30px);
+      vertical-align: middle;
+      color: #000;
+     
+      .font {
+        color: #12c2d8;
+      }
+		}
+
+		.state {
+			position: absolute;
+			right: rem(20px);
+      bottom: 0;
+      top: 0;
+      margin: auto 0;
+      padding: 0 10px;
+      height: rem(50px);
+      line-height: rem(50px);
+      font-size: rem(28px);
+      color: #fff;
+      border-radius: 50px;
+      background: #2987f6;
+
+			> i {
+				color: #d91717;
+			}
+		}
+  }
+
+
+  .status-tip {
+    margin: rem(40px) rem(30px) 0;
+    box-sizing: border-box;
+    padding: rem(15px) rem(30px);
+    color: #666;
+    line-height: rem(40px);
+    border: 1px solid #fec1b6;
+    background: #f9eeec;
+    border-radius: rem(10px);
+  }
+
+  .desc {
+    margin-top: rem(20px);
+    padding: rem(20px) rem(30px);
+    font-size: rem(26px);
+    line-height: rem(40px);
+
+    > p {
+      &:not(:first-child) {
+        margin-top: rem(10px);
+      }
+    }
+
+    .blue {
+      color: #03b2f1;
+      font-size: rem(30px);
+    }
+  }
+
+  .text {
+		padding: rem(30px) rem(20);
+		line-height: rem(72px);
+		font-size: rem(28px);
+		background: #fff;
+		overflow: hidden;
+
+		.info {
+			position: relative;
+
+			> span {
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+		}
+  }
+
+
+  .status {
+    position: relative;
+    box-sizing: border-box;
+    margin: rem(20px) rem(20px) 0;
+    height: rem(100px);
+
+    .sta-group {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      .item {
+        display: block;
+        margin-top: rem(30px);
+  
+        p{     
+          text-align: right;
+          float: left;
+          background:url(~assets/images/step/4.jpg);
+          background-size: 100%;
+          width:rem(223px);
+          margin-left: rem(18px); 
+          height: rem(54px);
+          line-height: rem(50px);
+          color: #fff;
+          font-size: rem(24px);
+          padding-right: rem(20px);
+        
+          &:first-child {
+            margin-left: 0;
+          }
+          
+        }
+        .item1 {
+          padding-right:rem(44px) ;
+          position: relative;
+          span {
+            position: absolute;
+            left: rem(16px);
+          }
+        }
+        .item2 {
+          padding-right:rem(16px) ;
+          span {
+            position: absolute;
+            left: rem(16px);
+          }
+        }
+        .item3 {
+          padding-right:rem(40px) ;
+          span {
+            position: absolute;
+            left: rem(16px);
+          }
+        }
+        
+        .item4,.item5 {
+          margin-right: 0;
+          // border-radius:rem(10px);
+        }
+      }
+
+      // .sta-txt {
+      //   float: left;
+      //   width: rem(140px);
+      //   height: 100%;
+
+      //   .i-wrapper {
+      //     position: absolute;
+      //     top: rem(18px);
+      //     left: rem(38px);
+      //     width: rem(64px);
+      //     height: rem(64px);
+      //     background: #fff;
+      //     border-radius: 50%;
+
+      //     > i {
+      //       display: block;
+      //       position: absolute;
+      //       top: rem(7px);
+      //       left: rem(7px);
+      //       width: rem(50px);
+      //       height: rem(50px);
+      //       background-size: 100% 100%;
+      //       background-repeat: no-repeat;
+      //       background-position: center;
+      //       background: #ccc;
+      //       // background-image: url(~assets/images/step/1.jpg);
+      //     }
+      //   }
+
+      //   span {
+      //     position: absolute;
+      //     bottom: 0;
+      //     display: inline-block;
+      //     width: 100%;
+      //     height: rem(50px);
+      //     text-align: center;
+      //     line-height: rem(50px);
+      //   }
+
+      //   &:not(:first-child) {
+      //     .i-wrapper::before {
+      //       position: absolute;
+      //       top: rem(22px);
+      //       left: rem(-42px);
+      //       width: rem(42px);
+      //       height: rem(20px);
+      //       content: '';
+      //       background:  #ccc;
+      //     }
+
+      //     i::before {
+      //       z-index: 1;
+      //       position: absolute;
+      //       top: rem(19px);
+      //       left: rem(-50px);
+      //       width: rem(50px);
+      //       height: rem(12px);
+      //       content: '';
+      //       background: #dcdcdc;
+      //     }
+      //   }
+
+      //   &:not(:last-child) {
+      //     .i-wrapper::after {
+      //       position: absolute;
+      //       top: rem(22px);
+      //       right: rem(-42px);
+      //       width: rem(42px);
+      //       height: rem(20px);
+      //       content: '';
+      //       background: #ccc;
+      //     }
+
+      //     i::after {
+      //       z-index: 1;
+      //       position: absolute;
+      //       top: rem(19px);
+      //       right: rem(-50px);
+      //       width: rem(50px);
+      //       height: rem(12px);
+      //       content: '';
+      //       background: #dcdcdc;
+      //     }
+      //   }
+
+      //   &.success {
+      //     i {
+      //       // background-image: url(~assets/images/success.png);
+      //       background: yellow;
+      //       &::before { background: #2ecc71; }
+      //       &::after { background: #2ecc71; }
+      //     }
+      //     span { color: #2ecc71; }
+      //   }
+
+      //   &.fail {
+      //     i {
+      //       // background-image: url(~assets/images/failure.png);
+      //       &::before { background: #f00; }
+      //       &::after { background: #f00; }
+      //     }
+      //     span { color: #f00; }
+      //   }
+      // }
+
+    }
+
+    .success {
+      background:url(~assets/images/step/5.jpg) !important ;
+      background-size: 100% !important ;
+     }
+     .error {
+      background:url(~assets/images/step/err.jpg) !important ;
+      background-size: 100% !important ;
+      padding-left: rem(20px); 
+      span {
+        position: absolute;
+        right: rem(42px);
+      }
+     }
+     .isOk {
+      background:url(~assets/images/step/ok.jpg) !important ;
+      background-size: 100% !important ;
+      position: relative;
+      span {
+        position: absolute;
+        right: rem(42px);
+      }
+     
+     }
+  }
+
+
+  // .status {
+  //   margin: 0 auto;
+  //   padding: rem(30px) 0;
+  //   width: rem(654px);
+
+  //   &:before {
+  //     display: block;
+  //     width: 100%;
+  //     height: rem(82px);
+  //     clear: both;
+  //     background: url('~assets/images/card-detail.png') no-repeat;
+  //     background-size: 100%;
+  //     content: ' ';
+  //   }
+
+  //   .sta-group {
+  //     position: absolute;
+  //     top: 0;
+  //     left: 0;
+  //     width: 100%;
+  //     height: 100%;
+
+  //     &:after {
+  //       display: block;
+  //       clear: both;
+  //       content: ' ';
+  //     }
+
+  //     .sta-txt {
+  //       float: left;
+  //       width: calc(100% / 4);
+  //       height: 100%;
+
+  //       > i {
+  //         position: absolute;
+  //         top: rem(46px);
+  //         width: rem(50px);
+  //         height: rem(50px);
+
+  //         &:before {
+  //           position: absolute;
+  //           z-index: 10000;
+  //         }
+
+  //         &:after {
+  //           position: absolute;
+  //           display: inline-block;
+  //           top: rem(-4px);
+  //           bottom: 0;
+  //           left: rem(50px);
+  //           margin: auto 0;
+  //           width: rem(70px);
+  //           height: rem(10px);
+  //           background: #21b730;
+  //           content: ' ';
+  //         }
+
+  //         &.sp-failure {
+  //           &:after {
+  //             background: #f00;
+  //           }
+  //         }
+  //       }
+
+  //       > span {
+  //         position: absolute;
+  //         display: block;
+  //         bottom: rem(-10px);
+
+  //         &.on {
+  //           color: #2ecc71;
+  //         }
+
+  //         &.fall {
+  //           color: #f00;
+  //         }
+  //       }
+
+  //       &:nth-child(1) {
+  //         > i {
+  //           left: rem(16px);
+  //         }
+
+  //         > span {
+  //           left: rem(-5px);
+  //         }
+  //       }
+
+  //       &:nth-child(2) {
+  //         > i {
+  //           left: rem(44px);
+
+  //           &:after {
+  //             left: rem(-74px);
+  //             width: rem(190px);
+  //           }
+  //         }
+
+  //         > span {
+  //           left: rem(24px);
+  //         }
+  //       }
+
+  //       &:nth-child(3) {
+  //         > i {
+  //           left: rem(72px);
+
+  //           &:after {
+  //             left: rem(-76px);
+  //             width: rem(190px);
+  //           }
+  //         }
+
+  //         > span {
+  //           left: rem(52px);
+  //         }
+  //       }
+
+  //       &:nth-child(4) {
+  //         > i {
+  //           left: rem(104px);
+
+  //           &:after {
+  //             left: rem(-80px);
+  //             width: rem(120px);
+  //           }
+  //         }
+
+  //         > span {
+  //           right: rem(-2px);
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
+  .foot-tip {
+    text-align: center;
+    padding: rem(50px) 0 rem(20px) 0;
+    font-size: rem(24px);
+  }
+
+}
