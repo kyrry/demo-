@@ -1,0 +1,120 @@
+@import "~assets/styles/_bootstrap";
+
+.message-reward-page {
+  height: 100%;
+  background: #ebebeb;
+
+  ._v-content {
+    padding: rem(90px) 0;
+  }
+
+  .wrapper {
+
+    .list {
+      .item {
+        margin: 0 auto;
+        padding-top: rem(20px);
+				width: rem(675px);
+				border-bottom: 1px solid $bc;
+
+        .inner {
+          margin-top: rem(30px);
+          padding: rem(25px);
+          border-radius: rem(10px);
+          background: #fff;
+          border: rem(1px) solid #ccc;
+
+          .head {
+            padding-bottom: rem(10px);
+            font-size: rem(30px);
+            color: #333;
+
+            .time {
+              color:#8c8c8c;
+              font-size: rem(26px);
+            }
+
+          }
+
+          .day {
+            padding-top: rem(10px);
+            font-size: rem(24px);
+						color: #b0b0b0;
+
+						.time {
+							padding-left: rem(20px);
+						}
+          }
+
+          .content {
+            padding: rem(20px) 0 rem(20px) 0;
+
+            > p {
+              line-height: rem(50px);
+              font-size: rem(30px);
+              color: #000;
+            }
+          }
+
+          .detail {
+            display: block;
+            padding-top: rem(20px);
+            font-size: rem(28px);
+            color: #000;
+            border-top: 1px solid $bc;
+            position: relative;
+          }
+        }
+      }
+    }
+    .icon {
+      width: auto;
+      height: 100%;
+      margin-left: rem(4px);
+
+      > img {
+        width: auto;
+        height: 100%;
+      }
+      &:after {
+        content: "";
+        display: block;
+        width: 0.625rem;
+        height: 0.625rem;
+        position: absolute;
+        right: rem(-548px);
+        top: 50%;
+        margin-top: -0.3125rem;
+        border-top: 0.09375rem solid #c7c7cc;
+        border-right: 0.09375rem solid #c7c7cc;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+    }
+
+  }
+
+  .date {
+    text-align: center;
+    font-size: 0;
+    padding-bottom: rem(8px);
+    padding-top: rem(44px);
+  
+    > span {
+      display: inline-block;
+      height: rem(40px);
+      line-height: rem(40px);
+      padding: 0 rem(10px);
+      background-color: rgba(153, 153, 153, .4);
+      color: #fff;
+      font-size: rem(24px);
+      border-radius: rem(10px);
+    }
+  }
+
+  .textColor {
+    color: #f00;
+  }
+
+}
+
